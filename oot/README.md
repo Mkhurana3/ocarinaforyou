@@ -19,8 +19,7 @@ DM_RES_CHECK=1 found 0 resources released too early and 0 missing residency.
 
 Upstream issue: https://github.com/seedds/nxnative/issues/1690 (related: https://github.com/seedds/nxnative/issues/1326)
 
-Do not play past the autosave before that cutscene. Not yet tested on current upstream main.
-
+Also tested on current upstream main (commit 1794a35a, 8 Nov 2026, shader chain 579d06bf3932, clean build): still dies at the same cutscene. 4 GPU hangs, then 28 ignored submissions and access revoked, at frame 4204, after steady 33.3 ms frames at a 30 fps cap. Do not play past the autosave before that cutscene.
 ## Tips
 - Back up your save folder before testing anything.
 - Check logs for your username before sharing them.
