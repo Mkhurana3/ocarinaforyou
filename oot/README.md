@@ -24,3 +24,11 @@ Do not play past the autosave before that cutscene. Not yet tested on current up
 ## Tips
 - Back up your save folder before testing anything.
 - Check logs for your username before sharing them.
+## Files
+- launchers/ - play scripts. play_oot_kws.sh is the one used for the 1080p setup above.
+- scripts/build_fork.sh, after_build.sh - build helpers used for the kid-with-sword-remake fork build.
+- scripts/ladder_kws.sh, ladder2.sh ... ladder5.sh - settings test "ladders": each one launches the game from the same save with different DM_* switches and reports whether the GPU died.
+- scripts/diag_kws.sh, diagnose.sh - read a run log: shader library, pipeline archive, GPU hangs, frame times.
+- scripts/run_all.sh - runs the diagnostics together.
+
+Paths in the scripts assume the build folders and backups in your home folder (for example ~/oot-kws-build and ~/oot_saves_pre_cutscene). Edit them for your setup.
