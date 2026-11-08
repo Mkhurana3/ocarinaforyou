@@ -44,7 +44,7 @@ From an autosave just before the cutscene, 6 of 6 runs died within 158 to 241 se
 
 Resource checking (DM_RES_CHECK=1) reported 0 resources released too early and 0 missing residency, so it does not look like a simple lifetime bug. GPU memory at the time of death was 6.7 to 11.9 GB.
 
-I have not yet tested current upstream main, which has had newer Ocarina fixes. Until then: do not play past the autosave before that cutscene.
+I also tested current upstream main (commit 1794a35a, 8 Nov 2026) from a clean build, and it still hangs at the same cutscene: 4 GPU hangs, then access revoked, at frame 4204. Until it is fixed upstream: do not play past the autosave before that cutscene.
 
 ---
 
